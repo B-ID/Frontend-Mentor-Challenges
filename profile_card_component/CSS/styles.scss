@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import "variables";
+@import "mixins";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 1rem;
+    font-family: "kumbh sans", sans-serif;
+    background-color: $dark-cyan;
+
+}
+
+
+section {
+    // min-width: 21.875rem;
+    background: $dark-cyan;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+
+    .bg-circle {
+
+        .bg-top,
+        .bg-bottom {
+            position: absolute;
+
+        }
+
+        //when i positioned the images absolute, they were stacked against one another.
+
+        .bg-top {
+            // border: 1px solid white;
+            top: 0;
+            left: 0;
+            transform: translate(-53%, -54%);
+            width: 100%;
+
+            @include breakpoint-up(tablet) {
+                transform: translate(-55%, -54%);
+            }
+
+            @include breakpoint-up(desktop) {
+                transform: translate(-54%, -58%);
+            }
+        }
+
+        .bg-bottom {
+            // border: 1px solid red;
+            bottom: 0;
+            right: 0;
+            transform: translate(48%, 44%);
+            width: 100%;
+
+            @include breakpoint-up(tablet) {
+                transform: translate(48%, 72%);
+            }
+
+            @include breakpoint-up(desktop) {
+                transform: translate(47%, 71%);
+            }
+
+        }
+
+
+
+    }
+
+
+    .main-container {
+        background-color: white;
+        border-radius: 1rem;
+        border: 1px solid $dark-cyan;
+        transition: all 150ms ease-in-out;
+        z-index: 100;
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .top-card {
+
+            img {
+                border-radius: 1rem 1rem 0 0;
+            }
+
+        }
+
+        .middle-card {
+            text-align: center;
+
+
+            .victor-img {
+                border-radius: 50%;
+                border: 5px solid white;
+                margin-top: -3.65rem;
+
+            }
+
+            .mid-content {
+                margin: 1rem auto 1.5rem auto;
+
+                h3 {
+                    color: $very-dark-saturated-blue;
+                }
+
+                span,
+                p {
+                    color: $dark-grayish-blue;
+                    font-weight: normal;
+                }
+
+                p {
+                    padding-top: 0.5rem;
+                }
+            }
+
+        }
+
+        .bottom-card {
+            border-top: 1px solid $dark-grayish-blue-opacity;
+            font-size: 0.945rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem;
+
+            .card-stats {
+                h3 {
+                    color: $very-dark-saturated-blue;
+                }
+
+                p {
+                    color: $dark-grayish-blue;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
