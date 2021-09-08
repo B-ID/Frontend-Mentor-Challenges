@@ -1,0 +1,15 @@
+.hide-for-mobile {
+    @include breakpoint-down(tablet) {
+        display: none;
+    }
+
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(desktop) {
+        display: none;
+    }
+
+}
+
+

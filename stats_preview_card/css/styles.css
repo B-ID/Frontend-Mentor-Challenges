@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@media (max-width: 61.1875rem) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090b1a;
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 170vh;
+}
+@media (min-width: 64rem) {
+  main {
+    height: 100vh;
+  }
+}
+main .container {
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-top: 2.75rem;
+  color: white;
+  overflow: hidden;
+  width: 93%;
+}
+@media (min-width: 64rem) {
+  main .container {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem 0 0 0.5rem;
+    justify-content: center;
+    width: 85%;
+  }
+}
+main .card-img {
+  height: 17.5rem;
+  max-width: 100%;
+  background: #aa5cdb url(/images/image-header-mobile.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+@media (min-width: 40rem) {
+  main .card-img {
+    height: 40.5rem;
+    max-width: 100%;
+    background: #aa5cdb url(/images/image-header-mobile.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+@media (min-width: 64rem) {
+  main .card-img {
+    background: #aa5cdb url(/images/image-header-desktop.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 31.25rem;
+    max-width: 100%;
+    order: 2;
+    width: 50%;
+  }
+}
+main .card-content {
+  background-color: #1b1938;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 64rem) {
+  main .card-content {
+    height: 31.25rem;
+    width: 50%;
+  }
+  main .card-content .content-width {
+    width: 80%;
+  }
+}
+main .card-content .main-heading {
+  padding: 1.5rem;
+}
+main .card-content .main-heading h1 {
+  text-align: center;
+}
+@media (min-width: 64rem) {
+  main .card-content .main-heading h1 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+}
+main .card-content .main-heading span {
+  color: #aa5cdb;
+}
+main .card-content .main-paragraph {
+  margin: 0 auto 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  width: 76%;
+}
+main .card-content .main-paragraph p {
+  text-align: center;
+}
+@media (min-width: 64rem) {
+  main .card-content .main-paragraph {
+    font-size: 1.1rem;
+    width: 100%;
+    line-height: 1.5;
+  }
+  main .card-content .main-paragraph p {
+    padding: 1.5rem;
+    text-align: left;
+  }
+}
+main .card-content .card-footer {
+  text-align: center;
+}
+@media (min-width: 64rem) {
+  main .card-content .card-footer {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+main .card-content .card-footer .card-stats {
+  padding: 1.5rem;
+}
+main .card-content .card-footer .card-stats p {
+  margin-top: 0.3rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
