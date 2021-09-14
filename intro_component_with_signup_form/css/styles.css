@@ -19,6 +19,8 @@ body {
 
 @media (min-width: 64rem) {
   body {
+    display: flex;
+    align-items: center;
     overflow: hidden;
   }
 }
@@ -76,14 +78,14 @@ body::before {
 
 .container {
   color: #fff;
-  width: 93%;
+  max-width: 93%;
   margin: 3.5rem auto;
 }
 
 @media (min-width: 64rem) {
   .container {
     display: flex;
-    width: 90%;
+    max-width: 90%;
   }
   .container .left-col {
     align-self: center;
