@@ -18,7 +18,10 @@ body {
     min-height: 100vh;
     font-size: 1rem;
     font-family: poppins, sans-serif;
+    
     @include breakpoint-up(desktop) {
+        display: flex;
+        align-items: center;
         overflow: hidden;
     }
 
@@ -77,13 +80,13 @@ body::before {
 
 .container {
     color: $white;
-    width: 93%;
+    max-width: 93%;
     margin: 3.5rem auto;
     
 
     @include breakpoint-up(desktop) {
         display: flex;
-        width: 90%;
+        max-width: 90%;
 
         .left-col {
             align-self: center;
